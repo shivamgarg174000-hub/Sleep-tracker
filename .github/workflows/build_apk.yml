@@ -15,11 +15,11 @@ jobs:
           channel: 'stable'
           cache: true
       - name: Install dependencies
-        run: cd Sleep-tracker/sleep_tracker_app && flutter pub get
+        run: cd sleep_tracker_app && flutter pub get
       - name: Build APK Release
-        run: cd Sleep-tracker/sleep_tracker_app && flutter build apk --release
+        run: cd sleep_tracker_app && flutter build apk --release
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
           name: release-apk
-          path: Sleep-tracker/sleep_tracker_app/build/app/outputs/flutter-apk/app-release.apk
+          path: sleep_tracker_app/build/app/outputs/flutter-apk/app-release.apk
