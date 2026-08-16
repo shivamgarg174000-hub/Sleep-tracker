@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:just_audio/just_audio.dart';
 
 import '../../../core/theme/app_theme.dart';
 import '../../../core/services/audio_providers.dart';
@@ -88,7 +87,7 @@ class _TrackTile extends StatelessWidget {
       onTap: onTap,
       child: GlassPanel(
         padding: const EdgeInsets.all(16),
-        borderColor: isCurrent ? AppColors.accentPrimary.withOpacity(0.5) : null,
+        borderColor: isCurrent ? AppColors.accentPrimary.withValues(alpha: 0.5) : null,
         child: Row(
           children: [
             Container(

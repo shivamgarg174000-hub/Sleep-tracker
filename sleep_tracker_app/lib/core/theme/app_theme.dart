@@ -115,7 +115,7 @@ class AppTheme {
   static List<BoxShadow> glow(Color color, {double blur = 40, double opacity = 0.45}) {
     return [
       BoxShadow(
-        color: color.withOpacity(opacity),
+        color: color.withValues(alpha: opacity),
         blurRadius: blur,
         spreadRadius: 2,
       ),

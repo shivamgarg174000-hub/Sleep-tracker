@@ -188,7 +188,7 @@ class _NotificationSettingsState extends ConsumerState<_NotificationSettings> {
   Future<void> _togglePush(bool enabled) async {
     setState(() => _busyPush = true);
     if (enabled) {
-      final granted = await enablePushNotifications(ref);
+      final granted = await enablePushNotifications(ref as dynamic);
       if (!granted && mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
@@ -198,7 +198,7 @@ class _NotificationSettingsState extends ConsumerState<_NotificationSettings> {
         );
       }
     } else {
-      await disablePushNotifications(ref);
+      await disablePushNotifications(ref as dynamic);
     }
     if (mounted) setState(() => _busyPush = false);
   }
@@ -221,7 +221,7 @@ class _NotificationSettingsState extends ConsumerState<_NotificationSettings> {
               children: [
                 SwitchListTile(
                   contentPadding: EdgeInsets.zero,
-                  activeColor: AppColors.accentPrimary,
+                  activeThumbColor: AppColors.accentPrimary,
                   value: profile.bedtimeReminderEnabled,
                   onChanged: _busyBedtime ? null : _toggleBedtime,
                   title: const Text('Bedtime reminder',
@@ -252,7 +252,7 @@ class _NotificationSettingsState extends ConsumerState<_NotificationSettings> {
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
           child: SwitchListTile(
             contentPadding: EdgeInsets.zero,
-            activeColor: AppColors.accentPrimary,
+            activeThumbColor: AppColors.accentPrimary,
             value: profile.pushNotificationsEnabled,
             onChanged: _busyPush ? null : _togglePush,
             title: const Text('Push notifications',
@@ -315,7 +315,7 @@ class _SettingsTile extends StatelessWidget {
           title: Text(title, style: TextStyle(color: color, fontSize: 14, fontWeight: FontWeight.w500)),
           trailing: trailing != null
               ? Text(trailing!, style: const TextStyle(color: AppColors.textMuted, fontSize: 13))
-              : Icon(Icons.chevron_right_rounded, color: AppColors.textMuted.withOpacity(0.6)),
+              : Icon(Icons.chevron_right_rounded, color: AppColors.textMuted.withValues(alpha: 0.6)),
           onTap: onTap,
         ),
       ),
