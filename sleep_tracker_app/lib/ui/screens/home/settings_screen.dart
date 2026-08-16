@@ -155,7 +155,7 @@ class _NotificationSettingsState extends ConsumerState<_NotificationSettings> {
   Future<void> _toggleBedtime(bool enabled) async {
     setState(() => _busyBedtime = true);
     await setBedtimeReminder(
-      ref,
+      
       enabled: enabled,
       hour: widget.profile.bedtimeReminderHour,
       minute: widget.profile.bedtimeReminderMinute,
@@ -176,7 +176,7 @@ class _NotificationSettingsState extends ConsumerState<_NotificationSettings> {
 
     setState(() => _busyBedtime = true);
     await setBedtimeReminder(
-      ref,
+      
       enabled: true,
       hour: picked.hour,
       minute: picked.minute,
