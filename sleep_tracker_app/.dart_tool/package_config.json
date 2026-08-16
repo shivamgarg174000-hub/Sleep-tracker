@@ -543,7 +543,7 @@
     },
     {
       "name": "hooks",
-      "rootUri": "file:///home/codespace/.pub-cache/hosted/pub.dev/hooks-2.1.0",
+      "rootUri": "file:///home/codespace/.pub-cache/hosted/pub.dev/hooks-2.0.2",
       "packageUri": "lib/",
       "languageVersion": "3.10"
     },
@@ -693,7 +693,7 @@
     },
     {
       "name": "meta",
-      "rootUri": "file:///home/codespace/.pub-cache/hosted/pub.dev/meta-1.19.0",
+      "rootUri": "file:///home/codespace/.pub-cache/hosted/pub.dev/meta-1.18.3",
       "packageUri": "lib/",
       "languageVersion": "3.5"
     },
@@ -843,7 +843,7 @@
     },
     {
       "name": "record_use",
-      "rootUri": "file:///home/codespace/.pub-cache/hosted/pub.dev/record_use-1.1.0",
+      "rootUri": "file:///home/codespace/.pub-cache/hosted/pub.dev/record_use-0.6.0",
       "packageUri": "lib/",
       "languageVersion": "3.10"
     },
@@ -1023,7 +1023,7 @@
     },
     {
       "name": "vector_math",
-      "rootUri": "file:///home/codespace/.pub-cache/hosted/pub.dev/vector_math-2.4.2",
+      "rootUri": "file:///home/codespace/.pub-cache/hosted/pub.dev/vector_math-2.4.0",
       "packageUri": "lib/",
       "languageVersion": "3.10"
     },
