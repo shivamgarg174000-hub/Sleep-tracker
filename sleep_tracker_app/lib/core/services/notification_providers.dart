@@ -50,13 +50,16 @@ Future<void> disablePushNotifications(Ref ref) async {
 
 /// Turns the daily bedtime local reminder on/off and (re)schedules it
 /// whenever the saved time changes. Called from Settings.
-Future<void> setBedtimeReminder(
-  Ref ref, {
-  required bool enabled,
-  required int hour,
-  required int minute,
-  required int sleepGoalMinutes,
-}) async {
+ Future<void> setBedtimeReminder(
+  WidgetRef ref, // or Ref ref
+  {
+    required bool enabled,
+    required int hour,
+    required int minute,
+    required int sleepGoalMinutes,
+  }
+)
+async {
   final notif = ref.read(notificationServiceProvider);
   final uid = FirebaseAuth.instance.currentUser?.uid;
 

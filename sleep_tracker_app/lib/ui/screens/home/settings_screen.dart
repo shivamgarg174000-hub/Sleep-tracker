@@ -154,15 +154,16 @@ class _NotificationSettingsState extends ConsumerState<_NotificationSettings> {
 
   Future<void> _toggleBedtime(bool enabled) async {
     setState(() => _busyBedtime = true);
-    await setBedtimeReminder(
-      enabled: enabled,
-      hour: widget.profile.bedtimeReminderHour,
-      minute: widget.profile.bedtimeReminderMinute,
-      sleepGoalMinutes: widget.profile.sleepGoalMinutes,
-    );
+   await setBedtimeReminder(
+  ref,
+  enabled: enabled,
+  hour: widget.profile.bedtimeReminderHour,
+  minute: widget.profile.bedtimeReminderMinute,
+  sleepGoalMinutes: widget.profile.sleepGoalMinutes,
+);
+
     if (mounted) setState(() => _busyBedtime = false);
   }
-
   Future<void> _pickTime(BuildContext context) async {
     final picked = await showTimePicker(
       context: context,
@@ -175,11 +176,13 @@ class _NotificationSettingsState extends ConsumerState<_NotificationSettings> {
 
     setState(() => _busyBedtime = true);
     await setBedtimeReminder(
-      enabled: true,
-      hour: picked.hour,
-      minute: picked.minute,
-      sleepGoalMinutes: widget.profile.sleepGoalMinutes,
-    );
+  ref,
+  enabled: true,
+  hour: picked.hour,
+  minute: picked.minute,
+  sleepGoalMinutes: widget.profile.sleepGoalMinutes,
+);
+
     if (mounted) setState(() => _busyBedtime = false);
   }
 
