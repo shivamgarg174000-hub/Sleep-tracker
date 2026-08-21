@@ -49,7 +49,7 @@ dependencies:
   shimmer: ^3.0.0
 
   # --- Haptics / Device ---
-  flutter_haptic: any
+  
   device_info_plus: ^10.0.0
 
   # --- Utilities ---
