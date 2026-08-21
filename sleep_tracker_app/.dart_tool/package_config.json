@@ -27,7 +27,7 @@
     },
     {
       "name": "archive",
-      "rootUri": "file:///home/codespace/.pub-cache/hosted/pub.dev/archive-4.0.9",
+      "rootUri": "file:///home/codespace/.pub-cache/hosted/pub.dev/archive-4.1.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -219,7 +219,7 @@
     },
     {
       "name": "dbus",
-      "rootUri": "file:///home/codespace/.pub-cache/hosted/pub.dev/dbus-0.7.14",
+      "rootUri": "file:///home/codespace/.pub-cache/hosted/pub.dev/dbus-0.7.15",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
@@ -981,7 +981,7 @@
     },
     {
       "name": "synchronized",
-      "rootUri": "file:///home/codespace/.pub-cache/hosted/pub.dev/synchronized-3.4.1+1",
+      "rootUri": "file:///home/codespace/.pub-cache/hosted/pub.dev/synchronized-3.4.1+2",
       "packageUri": "lib/",
       "languageVersion": "3.12"
     },
@@ -1029,7 +1029,7 @@
     },
     {
       "name": "vm_service",
-      "rootUri": "file:///home/codespace/.pub-cache/hosted/pub.dev/vm_service-15.2.0",
+      "rootUri": "file:///home/codespace/.pub-cache/hosted/pub.dev/vm_service-15.3.0",
       "packageUri": "lib/",
       "languageVersion": "3.5"
     },
@@ -1077,9 +1077,9 @@
     },
     {
       "name": "xml",
-      "rootUri": "file:///home/codespace/.pub-cache/hosted/pub.dev/xml-6.6.1",
+      "rootUri": "file:///home/codespace/.pub-cache/hosted/pub.dev/xml-7.0.1",
       "packageUri": "lib/",
-      "languageVersion": "3.8"
+      "languageVersion": "3.11"
     },
     {
       "name": "yaml",
