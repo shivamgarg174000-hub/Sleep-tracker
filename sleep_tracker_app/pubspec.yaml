@@ -26,7 +26,7 @@ dependencies:
   timezone: ^0.9.4
 
   # --- Health Integrations ---
-  health: ^10.2.0                 # Wraps Health Connect (Android) + HealthKit (iOS)
+  health: ^11.0.0                # Wraps Health Connect (Android) + HealthKit (iOS)
   permission_handler: ^11.3.1
 
   # --- AI Integration ---
