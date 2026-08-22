@@ -123,9 +123,9 @@
     },
     {
       "name": "carp_serializable",
-      "rootUri": "file:///home/codespace/.pub-cache/hosted/pub.dev/carp_serializable-1.2.0",
+      "rootUri": "file:///home/codespace/.pub-cache/hosted/pub.dev/carp_serializable-2.0.1",
       "packageUri": "lib/",
-      "languageVersion": "2.17"
+      "languageVersion": "3.3"
     },
     {
       "name": "characters",
@@ -362,12 +362,6 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "flutter_haptic",
-      "rootUri": "file:///home/codespace/.pub-cache/hosted/pub.dev/flutter_haptic-0.0.3",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "flutter_lints",
       "rootUri": "file:///home/codespace/.pub-cache/hosted/pub.dev/flutter_lints-4.0.0",
       "packageUri": "lib/",
@@ -537,7 +531,7 @@
     },
     {
       "name": "health",
-      "rootUri": "file:///home/codespace/.pub-cache/hosted/pub.dev/health-10.2.0",
+      "rootUri": "file:///home/codespace/.pub-cache/hosted/pub.dev/health-11.1.1",
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
