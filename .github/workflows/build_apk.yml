@@ -20,13 +20,13 @@ jobs:
       - name: Install dependencies
         run: cd sleep_tracker_app && flutter pub get
 
-      - name: Build APK (direct Gradle, full output)
-        working-directory: sleep_tracker_app/android
-        run: ./gradlew assembleRelease --stacktrace --info > gradle-full-log.txt 2>&1
+      - name: Build APK Release (Verbose Logging)
+        working-directory: sleep_tracker_app
+        run: flutter build apk --release --verbose > flutter-build-log.txt 2>&1
 
-      - name: Upload full Gradle log
+      - name: Upload full Flutter log
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: gradle-full-log
-          path: sleep_tracker_app/android/gradle-full-log.txt
+          name: flutter-full-log
+          path: sleep_tracker_app/flutter-build-log.txt
