@@ -7,19 +7,26 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
+
       - uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.47.0'
           channel: 'stable'
           cache: true
+
       - name: Install dependencies
         run: cd sleep_tracker_app && flutter pub get
-      - name: Build APK Release
-        run: cd sleep_tracker_app && flutter build apk --release
-      - name: Upload APK Artifact
+
+      - name: Build APK (direct Gradle, full output)
+        working-directory: sleep_tracker_app/android
+        run: ./gradlew assembleRelease --stacktrace --info > gradle-full-log.txt 2>&1
+
+      - name: Upload full Gradle log
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: release-apk
-          path: sleep_tracker_app/build/app/outputs/flutter-apk/app-release.apk
+          name: gradle-full-log
+          path: sleep_tracker_app/android/gradle-full-log.txt
